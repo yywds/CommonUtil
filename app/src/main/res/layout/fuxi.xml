@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_title_bar">
+    <TextView
+        android:id="@+id/top"
+        android:background="@drawable/shapes"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+<LinearLayout
+
+    android:id="@+id/top2"
+    android:background="@drawable/shapes"
+    android:layout_below="@id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/meiwen"
+        android:layout_weight="1"
+        android:text="复习单词"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
+
+  <ListView
+      android:id="@+id/ll_show"
+      android:layout_below="@id/top2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</RelativeLayout>

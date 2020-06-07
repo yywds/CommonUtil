@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shapes"
+    android:id="@+id/rl_title_bar">
+    <TextView
+        android:id="@+id/top"
+        android:background="@drawable/shapes"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shapes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/coner1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/btn_sousuo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sousuo" />
+            <TextView
+                android:gravity="center_vertical"
+                android:hint="请输入要查询的单词"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/et_sousuo"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+ <RelativeLayout
+     android:background="@drawable/coner1"
+     android:layout_marginTop="20dp"
+     android:layout_below="@id/top2"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <LinearLayout
+         android:id="@+id/yyw"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+
+     <RelativeLayout
+         android:layout_weight="1"
+         android:id="@+id/left"
+         android:gravity="center"
+         android:layout_marginTop="30dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginBottom="20dp"
+         android:background="#43CF7C"
+         android:layout_width="150dp"
+         android:layout_height="100dp">
+
+         <TextView
+             android:id="@+id/jinri"
+             android:gravity="center"
+             android:text="今日单词"
+             android:textColor="#fff"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+         <TextView
+             android:gravity="center"
+             android:layout_below="@id/jinri"
+             android:id="@+id/jrshuliang"
+             android:text="15个"
+             android:textColor="#fff"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+     </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_weight="1"
+             android:layout_width="50dp"
+             android:layout_height="50dp"/>
+
+     <RelativeLayout
+         android:layout_weight="1"
+         android:gravity="center"
+         android:layout_marginTop="30dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="20dp"
+         android:background="#43CF7C"
+         android:layout_width="150dp"
+         android:layout_height="100dp">
+
+         <TextView
+             android:id="@+id/shengyu"
+             android:gravity="center"
+             android:textColor="#fff"
+             android:text="剩余单词"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+         <TextView
+             android:gravity="center"
+             android:layout_below="@id/shengyu"
+             android:id="@+id/syshuliang"
+             android:textColor="#fff"
+             android:text="2000个"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+     </RelativeLayout>
+     </LinearLayout>
+
+     <TextView
+         android:id="@+id/jindu"
+         android:gravity="center"
+         android:textSize="20dp"
+         android:textStyle="bold"
+         android:layout_marginBottom="50dp"
+         android:layout_below="@id/yyw"
+         android:layout_marginTop="80dp"
+         android:text="学习进度  100/2000"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+ </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_kaishi"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="开始背单词"
+        android:textSize="30dp"
+        android:background="@drawable/coner1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</RelativeLayout>

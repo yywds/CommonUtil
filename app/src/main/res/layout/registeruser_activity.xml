@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_title_bar">
+    <TextView
+        android:id="@+id/top"
+        android:background="@drawable/shapes"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_below="@id/top"
+        android:background="@drawable/shapes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fff"
+            android:text="用户注册"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/user_type"
+        android:layout_below="@+id/user_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint=" 请确认密码："
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textColor="#0A0A0A"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/iv_fanhui"
+        android:src="@drawable/fahui"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/top2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint=" 请输入用户名："
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textColor="#0A0A0A"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/user_password"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint=" 请输入密码："
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textColor="#0A0A0A"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/user_password2"
+        android:layout_below="@+id/user_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint=" 请确认密码："
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textColor="#0A0A0A"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_phone"
+        android:layout_below="@+id/user_password2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number"
+        android:hint=" 请输入手机号："
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textColor="#0A0A0A"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="20sp"
+        android:text="立即注册"
+        android:id="@+id/btn_ook"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/user_password2"
+        android:layout_alignRight="@+id/user_password2"
+        android:layout_alignEnd="@+id/user_password2" />
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studyinfo">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".Utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!--今日头条框架屏幕适配-->
+        <meta-data android:name="design_width_in_dp" android:value="360"/>
+        <meta-data android:name="design_height_in_dp" android:value="640"/>
+
+        <activity android:name=".Activity.MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Login.LoginActivity"/>
+        <activity android:name=".Activity.XiugaiMima"/>
+        <activity android:name=".Activity.Login.RegisterUserActivity"/>
+        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.Quanbu.QuanBuActivity"/>
+        <activity android:name=".Activity.Detail.MeiwenActivity"/>
+        <activity android:name=".Activity.Detail.KechengActivity"/>
+        <activity android:name=".Activity.SelectWords"/>
+        <activity android:name=".Activity.BeidanciActivity"/>
+        <activity android:name=".Activity.ShowWords"/>
+        <activity android:name=".Activity.Shengciben"/>
+        <activity android:name=".Activity.Falu"/>
+        <activity android:name=".Activity.FuxiActivity"/>
+        <activity android:name=".Activity.Setting"/>
+        <activity android:name=".Activity.MainActivity2"/>
+        <activity android:name=".Activity.BeiActivity"/>
+        <activity android:name=".Activity.IntentActivity"/>
+        <activity android:name=".Activity.DetialWords"/>
+        <activity android:name=".Activity.ShoucangActivity"/>
+        <activity android:name=".Activity.DanciFuxiActivity"/>
+        <activity android:name=".Activity.IntentActivity2"/>
+        <activity android:name=".Activity.ShengciFuxiActivity"/>
+        <activity android:name=".Activity.IntentActivit3"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_title_bar">
+    <TextView
+        android:id="@+id/top"
+        android:background="@drawable/shapes"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_below="@id/top"
+        android:background="@drawable/shapes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fff"
+            android:text="训练"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/coner1"
+        android:id="@+id/top4"
+        android:layout_below="@id/top2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/ll1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="阅读美文"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:text="查看全部"
+                android:textSize="15dp"
+                android:textColor="#109ffa"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/lv_xian"
+            android:background="#8a8a8a"
+            android:layout_below="@id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <ListView
+            android:id="@+id/ll_show"
+            tools:listitem="1"
+            android:layout_below="@id/lv_xian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/coner1"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_below="@id/top4"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <TextView
+            android:id="@+id/fuxi"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="今天还有10个单词要复习"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@id/fuxi"
+            android:layout_marginTop="50dp"
+            android:text="点击开始复习"
+            android:id="@+id/btn_fuxi"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#f29a05"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

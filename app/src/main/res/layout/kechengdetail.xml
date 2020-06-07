@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+       android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.jzvd.JZVideoPlayerStandard
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="美食名称"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_below="@id/show"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/pinglun"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_pinglun"
+                android:textColor="#000"
+                android:text="热门评论："
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_pinglun"
+                android:id="@+id/ll_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:layout_below="@id/ll_show"
+                android:text="———我是有底线的———"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/sixin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:background="@drawable/yuan"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+
+            android:background="@drawable/sixin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+</RelativeLayout>

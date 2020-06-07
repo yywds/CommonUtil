@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#fff"
+    android:layout_centerVertical="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.shehuan.niv.NiceImageView
+            android:id="@+id/tt"
+            android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/people"
+            app:corner_radius ="8dp"
+            app:is_circle="false" />
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/bofang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="15dp"
+            android:text="标题"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/tt"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tt"
+            android:layout_below="@id/tv_name"
+            android:text="类型"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_type"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/goupiao"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button"
+            android:text="    学习    "
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
